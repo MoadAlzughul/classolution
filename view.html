@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title> Classolution test</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/icon_icon.ico" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <script>
+
+function myFunction() {
+  //alert("Page is loaded");
+  var bookNo = getUrlVars()["book"];
+  //alert(bookNo);
+
+  document.getElementById('popupslider').src = 'https://heyzine.com/flip-book/'+bookNo+'.html';
+//   <figure><a onclick="go('https://heyzine.com/flip-book/7ccf5e7778.html'); return false;" href=""> <img src="images/math1.jpg" alt="#" /></a></figure>
+
+
+}
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+         function go(loc) {
+            location.hash = "#popupslider";
+
+            document.getElementById('popupslider').src = loc;
+         }
+
+         
+
+         </script>
+   </head>
+   <!-- body -->
+   <body onload="myFunction()" class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader done by Moad -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="head">
+            <div  class="container">
+               <div class="row ">
+                  <div  class="col-md-6">
+                     <ul class="email_call">
+                        <li><a href="#"><img src="icon/2.png" alt="#"/>(+962)785890411</a></li>
+                        <li><a href="mailto:info@classolution.com"><img src="icon/1.png" alt="#"/> info@classolution.com</a></li>
+                     </ul>
+                  </div>
+                  <div  class="col-md-6">
+                     <ul class="social_icon">
+                        <li><a href="https://www.facebook.com/Classolution-307766155964624"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a></li> -->
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header-top" style="background-size: 100% 250%; padding-bottom: 0%;">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img src="images/classolution2.png" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                           <div class="limit-box">
+                              <nav class="main-menu">
+                                 <ul class="menu-area-main">
+                                    <li class="active"> <a href="index.html">Home</a> </li>
+                                     <li> <a href="index.html#KG1">KG1</a> </li> 
+                                    <li> <a href="index.html#KG2">KG2</a> </li>
+                                    <li> <a href="index.html#media">Media</a> </li>
+                                    <!-- <li> <a href="#review">Review</a> </li>  -->
+                                    <li> <a href="index.html#request">Contact us</a> </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+              
+            </section>
+         </div>
+      </header>
+      <!-- <iframe src="https://heyzine.com/flip-book/7ccf5e7778.html" width="100%" height="700px" >Browser not compatible.</iframe> -->
+
+      <!-- three box -->
+      
+      <!-- end three box -->
+      <!-- wellcome  -->
+     
+      <div id="service" class="back_box">
+         <div class="container-fluid">
+            <div class="row">
+               <iframe id="popupslider" src="about:blank" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </div>
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="follow">
+                        <h3>Follow Us</h3>
+                        <ul>
+                           <li><a href="https://www.facebook.com/Classolution-307766155964624"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <!-- <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a></li> -->
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2019 All Right Reserved By Classolution</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/popper.min.js"></script> -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <!-- <script>
+         // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+         // Australia.
+         function initMap() {
+             var map = new google.maps.Map(document.getElementById('map'), {
+                 zoom: 11,
+                 center: {
+                     lat: 40.645037,
+                     lng: -73.880224
+                 },
+             });
+         
+             var image = 'images/maps-and-flags.png';
+             var beachMarker = new google.maps.Marker({
+                 position: {
+                     lat: 40.645037,
+                     lng: -73.880224
+                 },
+                 map: map,
+                 icon: image
+             });
+         }
+      </script> -->
+      <!-- google map js -->
+      <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script> -->
+      <!-- end google map js -->
+   </body>
+</html>
