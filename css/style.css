@@ -1294,10 +1294,17 @@ ul.social_icon li a:hover {
 .wellcome .wellcome-box figure img {
      width: 100%;
 }
+
 .wellcome .wellcome-box {
      background-color: #230c0c;
      padding: 20px;
 }
+.wellcome .Noborder
+{
+     padding: 2px;
+
+}
+
 .read_more {
      font-size: 16px;
      background-color: #041d2c;
