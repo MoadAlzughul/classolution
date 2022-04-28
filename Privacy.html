@@ -30,40 +30,12 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
       <script>
 
-function myFunction() {
-  //alert("Page is loaded");
-  var bookNo = getUrlVars()["book"];
-  //alert(bookNo);
-
-  document.getElementById('popupslider').src = 'https://heyzine.com/flip-book/'+bookNo+'.html';
-//   <figure><a onclick="go('https://heyzine.com/flip-book/7ccf5e7778.html'); return false;" href=""> <img src="images/math1.jpg" alt="#" /></a></figure>
-
-
-}
-function getUrlVars()
-{
-    var vars = [], hash;
-    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
-    for(var i = 0; i < hashes.length; i++)
-    {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
-    }
-    return vars;
-}
-         function go(loc) {
-            location.hash = "#popupslider";
-
-            document.getElementById('popupslider').src = loc;
-         }
-
-         
+        
 
          </script>
    </head>
    <!-- body -->
-   <body onload="myFunction()" class="main-layout">
+   <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -140,8 +112,30 @@ function getUrlVars()
      
       <div id="service" class="back_box">
          <div class="container-fluid">
-            <div class="row">
-               <iframe id="popupslider" src="about:blank" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
+            <div class="row" style="padding: 20px;">
+              
+              <div> <h1 style="color: #5e9ca0;">Privacy policy</h1>
+               <h2 style="color: #2e6c80;">Faris applications:</h2>
+               <p>Boost your kid&rsquo;s preschool knowledge with fun learning Functionality:</p>
+               <ul>
+               <li>&nbsp;Kid-friendly graphics and gamified learning.</li>
+               <li>&nbsp;Available in 2 Languages: Arabic, and English.</li>
+               <li>&nbsp;Cool animations and narrated sounds that kids love.</li>
+               <li>&nbsp;Basic Skills: Learn letters, and recognize colors and shapes.</li>
+               <li>Edit any of the two areas and see the other changing in real time.&nbsp;</li>
+               </ul>
+               <br>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Attention</span>: Faris application does not collect or transfer any data to us or to any third party apart from the circumstances explained below.<br />Advertising.</p>
+               <h1><strong>Faris application</strong></h1>
+               <p>uses Google&rsquo;s mobile advertising platform Ad Mob and fully complies with their privacy and the developer&rsquo;s policy.</p>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Changes to this privacy policy</span><br />We reserve the right to change this policy at any time. You should check this page occasionally to ensure you are happy with any changes.</p>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Your acceptance of these terms</span><br />By using our apps, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our apps. Your continued use of the Apps following the posting of changes to this policy will be deemed your</p>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Acceptance of those changes</span>.<br />Our Policy toward Children<br />Our application is directed to children under 4 and we do not collect Personally Identifiable Information from children.</p>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Your rights</span><br />Pursuant to data protection laws, you have the right to access, modify, rectify and delete any of your individual data we might possess. To do so, please write to Info@classolution.com.</p>
+               <p><span style="background-color: #2b2301; color: #fff; display: inline-block; padding: 3px 10px; font-weight: bold; border-radius: 5px;">Contacting us</span><br />If you have any questions about this Privacy Policy, please contact us at: Info@classolution.com</p>
+               <p>** Copyright &copy; CLASSOLUTION-TECH 2022</p>
+               <p><strong>&nbsp;</strong></p>
+            </div>
             </div>
          </div>
       </div>
